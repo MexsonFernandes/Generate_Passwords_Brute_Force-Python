@@ -8,24 +8,37 @@ Using git
 git clone https://github.com/MexsonFernandes/Generate_Passwords_Brute_Force-Python.git
 ```
 Or download and extract the archive:
-<img style="float: right;" src="assets/clone-repo-button.png" alt="Clone or download" />
+<img align="right" width=300 src="assets/clone-repo-button.png" alt="Clone or download" />
+
 Under the repository name, click Clone or download -> Download ZIP. 
-Unpack the ZIP. 
+
+Unpack the zip anywhere on your computer. 
+
 
 ## Usage:
 main.py takes 4 arguments: 
-  * number of password character
-  * alphabets (y/n)
-  * special characters (y/n)
-  * numbers (y/n)
+  * N - number of password character
+  * [alphabets](https://docs.python.org/3/library/string.html#string.ascii_letters) (y/n)
+  * [special characters](https://docs.python.org/3/library/string.html#string.punctuation) (y/n)
+  * [numbers](https://docs.python.org/3/library/string.html#string.digits) (y/n)
 
-This generates a wordslist.txt and a logs.txt file. 
+This generates a wordlistN.txt and a logN.txt file. 
 
-If we wanted to generate all possible combinations of passwords 4 characters long, containing lower- and uppercase letters, special characters and numbers we would run: 
+## Example:
+We want to generate all possible combinations of passwords 3 characters long, containing lower- and uppercase letters, special characters and numbers. 
+
+We would navigate to the Generate_Passwords_Brute_Force-Python folder and run: 
 ```shell
-python main.py 4 y y y
+python main.py 3 y y y
 ```
-In this case the output is saved in wordslist4.txt and logs4.txt. 
+The output should be
+```
+830584
+processing...
+
+830584
+```
+In this case the passwords are saved in wordlist3.txt and a short log in logs3.txt. 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
