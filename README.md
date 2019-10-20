@@ -9,6 +9,6 @@ A Python module to generate all the possible combination of passwords for perfor
   * numbers (y/n)
   
  ## How to run(sample):
-  * python main.py 4 y y y
+  * ``python main.py 4 y y y``
   
 Explanation: generate 4 length passwords containing alphabets, special characters and numbers.
