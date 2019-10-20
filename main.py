@@ -5,8 +5,8 @@ A = sys.argv[2]#alphabets (y/n)
 S = sys.argv[3]#special characters (y/n)
 n = sys.argv[4]#numbers (y/n)
 def generate():
-    a= open("wordlist"+str(N)+".txt",'w')
-    b= open("log"+str(N)+".txt",'w')
+    a= open("wordlists/wordlist"+str(N)+".txt",'w')
+    b= open("logs/log"+str(N)+".txt",'w')
     list=0;
     password=''
     if A=='y':
