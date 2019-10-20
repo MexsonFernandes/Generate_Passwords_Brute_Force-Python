@@ -38,7 +38,7 @@ processing...
 
 830584
 ```
-In this case the passwords are saved in wordlist3.txt and a short log in logs3.txt. 
+In this case the passwords are saved in wordlist3.txt and a short log in log3.txt. 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
