@@ -1,6 +1,6 @@
 import random,sys,string
 
-N = int(sys.argv[1])#number of password character
+N = int(5)#number of password character
 A = sys.argv[2]#alphabets (y/n)
 S = sys.argv[3]#special characters (y/n)
 n = sys.argv[4]#numbers (y/n)
