@@ -25,13 +25,15 @@ main.py takes 4 arguments:
 This generates a wordlistN.txt and a logN.txt file. 
 
 ## Arguments:
-  * number of password character
-  * alphabets (y/n)
-  * special characters (y/n)
-  * numbers (y/n)
-  
+  -h, --help            show this help message and exit
+  -a, --alphabet        the password contains alphabet characters
+  -s, --special         the password contains special characters
+  -n, --number          the password contains numbers
+  -l LENGTH, --length LENGTH
+                        password length
  ## How to run(sample):
-  * ``python main.py 4 y y y``
+  * ``python main.py --help``
+  * ``python main.py --alphabet --length 4``
   
 Explanation: generate 4 length passwords containing alphabets, special characters and numbers.
 
@@ -40,7 +42,7 @@ We want to generate all possible combinations of passwords 3 characters long, co
 
 We would navigate to the Generate_Passwords_Brute_Force-Python folder and run: 
 ```shell
-python main.py 3 y y y
+python main.py -a -s -n -l 4
 ```
 The output should be
 ```

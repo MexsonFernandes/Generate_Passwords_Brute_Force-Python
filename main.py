@@ -1,21 +1,34 @@
-import random,sys,string
+import random, sys, string, argparse
 
-N = int(5)#number of password character
-A = sys.argv[2]#alphabets (y/n)
-S = sys.argv[3]#special characters (y/n)
-n = sys.argv[4]#numbers (y/n)
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-a', '--alphabet', action='store_true', 
+    help="the password contains alphabet characters")
+parser.add_argument('-s', '--special', action='store_true', 
+    help="the password contains special characters")
+parser.add_argument('-n', '--number', action='store_true', 
+    help="the password contains numbers")
+parser.add_argument('-l', '--length',
+    help="password length", required=True, type=int)
+
+
+args = parser.parse_args()
+
+
 def generate():
+    N = args.length
     a= open("wordlists/wordlist"+str(N)+".txt",'w')
     b= open("logs/log"+str(N)+".txt",'w')
+
     list=0;
     password=''
-    if A=='y':
+    if args.alphabet:
         list=list+52;
         password=password+string.ascii_letters
-    if S=='y':
+    if args.special:
         list=list+32;
         password=password+string.punctuation
-    if n=='y':
+    if args.number:
         list=list+10;
         password=password+string.digits
     total=list**N#permutation for repetition N**r
