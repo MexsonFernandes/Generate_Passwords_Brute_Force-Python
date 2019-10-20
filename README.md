@@ -24,6 +24,17 @@ main.py takes 4 arguments:
 
 This generates a wordlistN.txt and a logN.txt file. 
 
+## Arguments:
+  * number of password character
+  * alphabets (y/n)
+  * special characters (y/n)
+  * numbers (y/n)
+  
+ ## How to run(sample):
+  * ``python main.py 4 y y y``
+  
+Explanation: generate 4 length passwords containing alphabets, special characters and numbers.
+
 ## Example:
 We want to generate all possible combinations of passwords 3 characters long, containing lower- and uppercase letters, special characters and numbers. 
 
@@ -42,3 +53,4 @@ In this case the passwords are saved in wordlist3.txt and a short log in log3.tx
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
